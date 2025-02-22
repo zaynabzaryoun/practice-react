@@ -1,5 +1,6 @@
 import Button from "./Button"
 import "./App.css"
+import Counter from "./Counter"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       }
 
       <Button />
+      <Counter />
     </>
   )
 }
