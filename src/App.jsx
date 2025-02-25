@@ -1,7 +1,8 @@
 // import Button from "./Button"
 import "./App.css"
 // import Counter from "./Counter"
-import Gallary from "./Gallary"
+import Gallery from "./Gallery"
+import TodoList from "./TodoList"
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
   // const productList = products.map((product) => {return <li style={{color: product.title === "Apple"? "pink" : "black" }} key={product.id}>{product.title}</li>})
   return (
     <>
-      <Gallary />
+      <Gallery />
+      <TodoList />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {

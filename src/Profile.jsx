@@ -1,7 +1,7 @@
-export default function Profile() {
+export function Profile() {
     return (
         <img
-            src="https://cdn.britannica.com/31/121131-050-D35E1EAD/Portrait-Artist-wood-oil-Tocque-Gold-Chain.jpg"
+            src="https://www.shutterstock.com/image-vector/male-user-account-profile-circle-260nw-467503055.jpg"
             alt="profile picture"
         />
     )

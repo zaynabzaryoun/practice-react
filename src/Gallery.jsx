@@ -1,6 +1,6 @@
-import Profile from "./Profile"
+import {Profile} from "./Profile"
 
-function Gallary() {
+function Gallery() {
     return (
         <>
             <h1>"hellooooooooooooooooooooo"</h1>
@@ -11,4 +11,4 @@ function Gallary() {
     )
 }
 
-export default Gallary;
+export default Gallery;
