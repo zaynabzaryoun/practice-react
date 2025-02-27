@@ -1,8 +1,33 @@
-export function Profile() {
+import { Children } from "react"
+import Avatar from "./Avatar"
+
+function Card({children}) {
     return (
-        <img
-            src="https://www.shutterstock.com/image-vector/male-user-account-profile-circle-260nw-467503055.jpg"
-            alt="profile picture"
-        />
+        <div>
+            {children}
+        </div>
+    )
+}
+
+export function Profile(props) {
+    return (
+        <>
+            <Card>
+            {/* <Avatar
+            // person={{ name: "sara", imgId: "8396" }}
+                {...props}
+            /> */}
+                <h1>byeeeee</h1>
+            </Card>
+            
+            <Card>
+                <Avatar 
+                // person={{name: "ali", imgId: "6353"}}
+                {...props}
+            />
+                
+           </Card>
+            
+        </>
     )
 }
