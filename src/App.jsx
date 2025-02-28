@@ -3,6 +3,7 @@ import "./App.css"
 // import Counter from "./Counter"
 import Gallery from "./Gallery"
 import TodoList from "./TodoList"
+import PackingList from "./PackingList"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <>
       <Gallery />
       <TodoList />
+      <PackingList />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
