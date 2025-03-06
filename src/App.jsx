@@ -6,6 +6,7 @@ import TodoList from "./TodoList"
 import PackingList from "./PackingList"
 import AppEvent from "./AppEvent"
 import Toolbar from "./Toolbar"
+import Signup from "./Signup"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <PackingList />
       <AppEvent />
       <Toolbar />
+      <Signup />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
