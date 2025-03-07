@@ -7,6 +7,7 @@ import PackingList from "./PackingList"
 import AppEvent from "./AppEvent"
 import Toolbar from "./Toolbar"
 import Signup from "./Signup"
+import AppState from "./AppState"
 
 
 function App() {
@@ -25,12 +26,14 @@ function App() {
   // const productList = products.map((product) => {return <li style={{color: product.title === "Apple"? "pink" : "black" }} key={product.id}>{product.title}</li>})
   return (
     <>
-      <Gallery />
-      <TodoList />
-      <PackingList />
-      <AppEvent />
-      <Toolbar />
-      <Signup />
+      {/* <Gallery /> */}
+      {/* <TodoList /> */}
+      {/* <PackingList /> */}
+      {/* <AppEvent /> */}
+      {/* <Toolbar /> */}
+      {/* <Signup /> */}
+      <AppState />
+      <AppState />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {

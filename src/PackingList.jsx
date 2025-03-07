@@ -1,4 +1,4 @@
-import {people} from "./data.jsx"
+// import {people} from "./data.jsx"
 import { getImageUrl } from "./util.jsx"
 
 function Item({ name, isPacked }) {
