@@ -8,6 +8,7 @@ import AppEvent from "./AppEvent"
 import Toolbar from "./Toolbar"
 import Signup from "./Signup"
 import AppState from "./AppState"
+import Form from "./Form"
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       {/* <Signup /> */}
       <AppState />
       <AppState />
+      <Form />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
