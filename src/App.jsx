@@ -1,6 +1,6 @@
 import Button from "./Button"
 import "./App.css"
-// import Counter from "./Counter"
+import Counter from "./Counter"
 import Gallery from "./Gallery"
 import TodoList from "./TodoList"
 import PackingList from "./PackingList"
@@ -9,6 +9,7 @@ import Toolbar from "./Toolbar"
 import Signup from "./Signup"
 import AppState from "./AppState"
 import Form from "./Form"
+import CrosswalkLight from "./CrosswalkLight"
 
 
 function App() {
@@ -33,9 +34,10 @@ function App() {
       {/* <AppEvent /> */}
       {/* <Toolbar /> */}
       {/* <Signup /> */}
-      <AppState />
-      <AppState />
-      <Form />
+      {/* <AppState /> */}
+      {/* <AppState /> */}
+      {/* <Form /> */}
+      <CrosswalkLight />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
