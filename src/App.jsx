@@ -10,6 +10,10 @@ import Signup from "./Signup"
 import AppState from "./AppState"
 import Form from "./Form"
 import CrosswalkLight from "./CrosswalkLight"
+import MovingDot from "./MovingDot"
+import List from "./List"
+import ShapeEditor from "./ShapeEditor"
+import CounterList from "./CounterList"
 
 
 function App() {
@@ -37,7 +41,11 @@ function App() {
       {/* <AppState /> */}
       {/* <AppState /> */}
       {/* <Form /> */}
-      <CrosswalkLight />
+      {/* <List /> */}
+      {/* <ShapeEditor /> */}
+      <CounterList />
+      {/* <CrosswalkLight /> */}
+      {/* <MovingDot /> */}
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
