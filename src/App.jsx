@@ -14,6 +14,7 @@ import MovingDot from "./MovingDot"
 import List from "./List"
 import ShapeEditor from "./ShapeEditor"
 import CounterList from "./CounterList"
+import FeedbackForm from "./FeedbackForm"
 
 
 function App() {
@@ -43,9 +44,10 @@ function App() {
       {/* <Form /> */}
       {/* <List /> */}
       {/* <ShapeEditor /> */}
-      <CounterList />
+      {/* <CounterList /> */}
       {/* <CrosswalkLight /> */}
       {/* <MovingDot /> */}
+      <FeedbackForm />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
