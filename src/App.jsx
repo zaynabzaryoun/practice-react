@@ -49,7 +49,8 @@ function App() {
       {/* <CrosswalkLight /> */}
       {/* <MovingDot /> */}
       {/* <FeedbackForm /> */}
-      <Menu />
+      {/* <Menu /> */}
+      <TravelPlan />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
