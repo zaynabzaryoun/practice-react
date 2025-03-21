@@ -1,7 +1,83 @@
-import { act, useReducer } from 'react';
-import AddTask from './AddTask.js';
-import TaskList from './TaskList.js';
+import { act, useReducer, useState } from 'react';
+// import AddTask from './AddTask.js';
+// import TaskList from './TaskList.js';
 
+
+function AddTask({ onAddTask }) {
+    const [text, setText] = useState("")
+    return (
+        <>
+            <input placeholder='add task' value={text} onChange={e => setText(e.target.value)} />
+
+            <button onClick={() => {
+                setText("")
+                onAddTask(text)
+            }}>
+                add
+            </button>
+        </>
+    )
+} 
+
+
+function TaskList({
+    tasks, onChangeTask, onDeleteTask
+}) {
+    return (
+        <ul>
+            {tasks.map(task => (
+                <li key={task.id}>
+                    <Task 
+                        task={task}
+                        onChange={onChangeTask}
+                        onDeleteTask={onDeleteTask}
+                    />
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+function Task({ task, onChange, onDelete }) {
+    const [isEdititng, setIsEditing] = useState(false)
+    let taskContent;
+    if (isEdititng) {
+        taskContent = (
+            <>
+                <input
+                    value={task.text}
+                    onChange={e => {
+                        onChange({
+                            ...task,
+                            text: e.target.value
+                        })
+                    }}
+                />
+                <button onClick={()=> setIsEditing(fasle)}>save</button>
+            </>
+        )
+    } else {
+        taskContent = (
+            <>
+                {task.text}
+                <button onClick={()=> setIsEditing(true)}>edit</button>
+            </>
+        )
+    } 
+    return (
+        <label>
+            <input type='checkbox' checked={task.done} onChange={e => {
+                onChange({
+                    ...task,
+                    done: e.target.value
+                })
+            }}
+            />
+            {taskContent}
+            <button onClick={() => onDelete(task.id)}>delete</button>
+        </label>
+    )
+}
 
 export default function TaskApp() {
     const [tasks, dispatch] = useReducer(tasksReducer, initialTasks)

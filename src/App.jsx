@@ -17,6 +17,7 @@ import CounterList from "./CounterList"
 import FeedbackForm from "./FeedbackForm"
 import Menu from "./Menu"
 import TaskApp from "./TaskApp"
+import Accordion from "./Accordion"
 
 
 function App() {
@@ -52,7 +53,8 @@ function App() {
       {/* <FeedbackForm /> */}
       {/* <Menu /> */}
       {/* <TravelPlan /> */}
-      <TaskApp />
+      {/* <TaskApp /> */}
+      <Accordion />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
