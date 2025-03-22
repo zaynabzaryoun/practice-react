@@ -18,6 +18,8 @@ import FeedbackForm from "./FeedbackForm"
 import Menu from "./Menu"
 import TaskApp from "./TaskApp"
 import Accordion from "./Accordion"
+import Scoreboard from "./Scoreboard"
+import Messenger from "./Messenger"
 
 
 function App() {
@@ -54,7 +56,9 @@ function App() {
       {/* <Menu /> */}
       {/* <TravelPlan /> */}
       {/* <TaskApp /> */}
-      <Accordion />
+      {/* <Accordion /> */}
+      {/* <Scoreboard /> */}
+      <Messenger />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
