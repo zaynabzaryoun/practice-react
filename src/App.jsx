@@ -20,6 +20,7 @@ import TaskApp from "./TaskApp"
 import Accordion from "./Accordion"
 import Scoreboard from "./Scoreboard"
 import Messenger from "./Messenger"
+import AppContext from "./AppContext"
 
 
 function App() {
@@ -58,7 +59,8 @@ function App() {
       {/* <TaskApp /> */}
       {/* <Accordion /> */}
       {/* <Scoreboard /> */}
-      <Messenger />
+      {/* <Messenger /> */}
+      <AppContext />
       {/* <h1 className="heading">hello , welcome to my app</h1>
       <p>{"user name: " + user.name}</p>
       {
